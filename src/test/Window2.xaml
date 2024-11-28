@@ -1,0 +1,22 @@
+﻿<Window x:Class="test.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:test"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Window.Resources>
+        <SolidColorBrush x:Key="TBDefault" Color="#FFC8C8C8"/>
+    </Window.Resources>
+    <Grid>
+        <Button x:Name="BtYe" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="86" Margin="132,181,0,0" Content="Ж" Click="BtYe_Click"/>
+        <Button x:Name="BtRed" Content="К" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="86" Margin="132,111,0,0" Click="BtRed_Click"/>
+        <Button x:Name="Back2" Content="Назад" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="86" Click="Button_Click"/>
+        <Button x:Name="BtGr" HorizontalAlignment="Left" Height="47" VerticalAlignment="Top" Width="86" Margin="132,251,0,0" Content="З" Click="BtGr_Click"/>
+        <TextBox x:Name="TbR"  TextWrapping="Wrap" Width="120" Margin="291,111,389,276" Background="Red"/>
+        <TextBox x:Name="TbYe" TextWrapping="Wrap" Width="120" Margin="291,181,389,206" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+        <TextBox x:Name="TbGr" TextWrapping="Wrap" Width="120" Margin="291,251,389,136" Background="{DynamicResource {x:Static SystemColors.ActiveBorderBrushKey}}"/>
+
+    </Grid>
+</Window>
